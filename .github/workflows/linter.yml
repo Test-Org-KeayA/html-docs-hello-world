@@ -1,4 +1,4 @@
-name: Lint Code Base
+name: Linter
 
 on:
   push:
@@ -12,6 +12,5 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-
     - name: Super-Linter
-      uses: github/super-linter:latest
+      steps: github/super-linter:@v4.9.7
